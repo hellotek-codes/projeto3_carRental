@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/b8adcf5390.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Tek Lux</title>
+  </head>
+  <body>
+    <header>
+      <div id="background_img_container">
+        <div class="background_overlay"></div>
+
+        <div class="yellow_box"></div>
+
+        <div id="menu_container">
+          <span id="logo">HELLOTEK LUXURY CAR RENTALS</span>
+          <nav>
+            <ul>
+              <li><a href="#cars">Carros</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#reviews">Clientes</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <section id="header_main_content">
+          <h1>Locação de Carros de Luxo</h1>
+          <p>Um novo padrão de transporte</p>
+          <button id="contactBtn" type="button">Contato</button>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <h2 id="cars">Seu sonho está aqui</h2>
+
+      <section class="banner_container">
+        <a class="button prev" onclick="plusSlides(-1)">
+          <i class="fa-solid fa-chevron-left fa-2xl" style="color: #e09201"></i>
+        </a>
+
+        <a class="button next" onclick="plusSlides(1)">
+          <i
+            class="fa-solid fa-chevron-right fa-2xl"
+            style="color: #e09201"
+          ></i>
+        </a>
+
+        <div id="slider">
+          <ul class="border">
+            <li class="fade slide_img" data-active>
+              <img
+                class="carousel_img"
+                src="./src/imgs/porsche-turbo-2934071_1280.jpg"
+                alt="car1"
+              />
+            </li>
+            <li class="fade slide_img">
+              <img
+                class="carousel_img"
+                src="./src/imgs/lamborghini-aventador-3.jpg"
+                alt="car2"
+              />
+            </li>
+            <li class="fade slide_img">
+              <img
+                class="carousel_img"
+                src="./src/imgs/maserati-granturismo-3085051_1280.jpg"
+                alt="car3"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" class="description">
+        <div>
+          <div>
+            <img src="./src/imgs/range-rover-2015653_1280.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Carros de auto padrão</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+              quod nam modi natus?
+            </p>
+            <p>
+              Nulla quibusdam tempora perferendis dolorum repudiandae saepe illo
+              provident perspiciatis officia est! Reiciendis vero quibusdam
+              consequatur cum!
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h3>Conforto e segurança</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+              quod nam modi natus? Nulla quibusdam tempora perferendis dolorum
+              repudiandae saepe illo provident perspiciatis officia est!
+              Reiciendis vero quibusdam consequatur cum!
+            </p>
+          </div>
+          <div>
+            <img src="./src/imgs/mustang-black.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <div class="banner">
+        <div class="background_overlay"></div>
+        <div class="yellow_box_banner"></div>
+      </div>
+
+      <ul id="reviews" class="grid_container">
+        <li class="grid_item">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            repellat vel. Porro mollitia voluptatibus officiis exercitationem
+            doloribus quasi amet a illo. Sapiente unde porro odit modi voluptas
+            a qui officia.
+          </p>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+        </li>
+        <li class="grid_item">
+          <img class="grid_img" src="./src/imgs/bentley-3696330_1280.jpg" />
+        </li>
+        <li class="grid_item">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            repellat vel. Porro mollitia voluptatibus officiis exercitationem
+            doloribus quasi amet a illo. Sapiente unde porro odit modi voluptas
+            a qui officia.
+          </p>
+          <p>⭐⭐⭐⭐⭐</p>
+        </li>
+        <li class="grid_item">
+          <img class="grid_img" src="./src/imgs/mercedes.jpg" />
+        </li>
+        <li class="grid_item">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            repellat vel. Porro mollitia voluptatibus officiis exercitationem
+            doloribus quasi amet a illo. Sapiente unde porro odit modi voluptas
+            a qui officia.
+          </p>
+          <p>⭐⭐⭐⭐⭐</p>
+        </li>
+        <li class="grid_item">
+          <img class="grid_img" src="./src/imgs/volante.jpg" />
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <div>
+        <form id="contact">
+          <input type="text" name="name" placeholder="Nome" />
+
+          <input type="email" name="email" placeholder="Email" />
+
+          <input type="text" name="phone" placeholder="Telefone" />
+
+          <textarea name="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <span id="logo">HELLOTEK LUXURY CAR RENTALS</span>
+
+        <div class="social_media">
+          <a href="#" target="_blank">
+            <i
+              class="fa-brands fa-square-whatsapp fa-2xl"
+              style="color: #ffffff"
+            ></i>
+          </a>
+          <a href="#" target="_blank">
+            <i
+              class="fa-brands fa-square-instagram fa-2xl"
+              style="color: #ffffff"
+            ></i>
+          </a>
+          <a href="#" target="_blank">
+            <i
+              class="fa-brands fa-square-facebook fa-2xl"
+              style="color: #ffffff"
+            ></i>
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="./src/scripts.js"></script>
+  </body>
+</html>
