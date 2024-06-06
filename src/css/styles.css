@@ -62,7 +62,7 @@ body {
       padding: 4rem 0;
       margin-bottom: 2rem;
       position: relative;
-      background-image: url("./imgs/bmw-m4.jpg");
+      background-image: url("../imgs/bmw-m4.jpg");
       background-repeat: no-repeat;
       background-position: center;
 
@@ -276,7 +276,7 @@ body {
       height: 550px;
       background-color: black;
       margin-bottom: 100px;
-      background-image: url("./imgs/porsche-911-3341697_1280.jpg");
+      background-image: url("../imgs/porsche-911-3341697_1280.jpg");
       background-repeat: no-repeat;
       position: relative;
       background-position: center;
