@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
 
     <script
       src="https://kit.fontawesome.com/b8adcf5390.js"
@@ -15,24 +15,32 @@
   </head>
   <body>
     <header>
-      <div id="background_img_container">
+      <div class="background_img_container">
         <div class="background_overlay"></div>
 
         <div class="yellow_box"></div>
 
-        <div id="menu_container">
-          <span id="logo">HELLOTEK LUXURY CAR RENTALS</span>
+        <div class="menu_container">
+          <span class="logo">HELLOTEK LUXURY CAR RENTALS</span>
           <nav>
             <ul>
-              <li><a href="#cars">Carros</a></li>
-              <li><a href="#services">Serviços</a></li>
-              <li><a href="#reviews">Clientes</a></li>
-              <li><a href="#contact">Contato</a></li>
+              <li>
+                <a href="#cars">Carros</a>
+              </li>
+              <li>
+                <a href="#services">Serviços</a>
+              </li>
+              <li>
+                <a href="#reviews">Clientes</a>
+              </li>
+              <li>
+                <a href="#contact">Contato</a>
+              </li>
             </ul>
           </nav>
         </div>
 
-        <section id="header_main_content">
+        <section class="header_main_content">
           <h1>Locação de Carros de Luxo</h1>
           <p>Um novo padrão de transporte</p>
           <button id="contactBtn" type="button">Contato</button>
@@ -41,51 +49,51 @@
     </header>
 
     <main>
-      <h2 id="cars">Seu sonho está aqui</h2>
+      <h2>Seu sonho está aqui</h2>
 
       <section class="banner_container">
-        <a class="button prev" onclick="plusSlides(-1)">
-          <i class="fa-solid fa-chevron-left fa-2xl" style="color: #e09201"></i>
+        <a class="prev" onclick="plusSlides(-1)">
+          <i class="fa-solid fa-chevron-left fa-2xl"></i>
         </a>
 
-        <a class="button next" onclick="plusSlides(1)">
-          <i
-            class="fa-solid fa-chevron-right fa-2xl"
-            style="color: #e09201"
-          ></i>
+        <a class="next" onclick="plusSlides(1)">
+          <i class="fa-solid fa-chevron-right fa-2xl"></i>
         </a>
 
-        <div id="slider">
-          <ul class="border">
-            <li class="fade slide_img" data-active>
+        <div>
+          <ul>
+            <li class="slide_img" data-active>
               <img
                 class="carousel_img"
                 src="./src/imgs/porsche-turbo-2934071_1280.jpg"
-                alt="car1"
+                alt="carro porsche 911"
               />
             </li>
-            <li class="fade slide_img">
+            <li class="slide_img">
               <img
                 class="carousel_img"
                 src="./src/imgs/lamborghini-aventador-3.jpg"
-                alt="car2"
+                alt="carro Lamborghini Aventador"
               />
             </li>
-            <li class="fade slide_img">
+            <li class="slide_img">
               <img
                 class="carousel_img"
                 src="./src/imgs/maserati-granturismo-3085051_1280.jpg"
-                alt="car3"
+                alt="carro Maserati Granturismo"
               />
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="services" class="description">
+      <section class="description">
         <div>
           <div>
-            <img src="./src/imgs/range-rover-2015653_1280.jpg" alt="" />
+            <img
+              src="./src/imgs/range-rover-2015653_1280.jpg"
+              alt="carro Range Rover"
+            />
           </div>
           <div class="content">
             <h3>Carros de auto padrão</h3>
@@ -111,7 +119,7 @@
             </p>
           </div>
           <div>
-            <img src="./src/imgs/mustang-black.jpg" alt="" />
+            <img src="./src/imgs/mustang-black.jpg" alt="carro Ford Mustang" />
           </div>
         </div>
       </section>
@@ -121,21 +129,8 @@
         <div class="yellow_box_banner"></div>
       </div>
 
-      <ul id="reviews" class="grid_container">
-        <li class="grid_item">
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            repellat vel. Porro mollitia voluptatibus officiis exercitationem
-            doloribus quasi amet a illo. Sapiente unde porro odit modi voluptas
-            a qui officia.
-          </p>
-          <p class="stars">⭐⭐⭐⭐⭐</p>
-        </li>
-        <li class="grid_item">
-          <img class="grid_img" src="./src/imgs/bentley-3696330_1280.jpg" />
-        </li>
-        <li class="grid_item">
+      <ul class="grid_container">
+        <li>
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
@@ -145,10 +140,13 @@
           </p>
           <p>⭐⭐⭐⭐⭐</p>
         </li>
-        <li class="grid_item">
-          <img class="grid_img" src="./src/imgs/mercedes.jpg" />
+        <li>
+          <img
+            src="./src/imgs/bentley-3696330_1280.jpg"
+            alt="interior de um carro da marca Bentley"
+          />
         </li>
-        <li class="grid_item">
+        <li>
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
@@ -158,27 +156,47 @@
           </p>
           <p>⭐⭐⭐⭐⭐</p>
         </li>
-        <li class="grid_item">
-          <img class="grid_img" src="./src/imgs/volante.jpg" />
+        <li>
+          <img
+            src="./src/imgs/mercedes.jpg"
+            alt="interior de um carro da marca mercedes-benz"
+          />
+        </li>
+        <li>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            repellat vel. Porro mollitia voluptatibus officiis exercitationem
+            doloribus quasi amet a illo. Sapiente unde porro odit modi voluptas
+            a qui officia.
+          </p>
+          <p>⭐⭐⭐⭐⭐</p>
+        </li>
+        <li>
+          <img
+            src="./src/imgs/volante.jpg"
+            alt="interior de um carro vintage"
+          />
         </li>
       </ul>
     </main>
 
     <footer>
       <div>
-        <form id="contact">
+        <form>
           <input type="text" name="name" placeholder="Nome" />
-
           <input type="email" name="email" placeholder="Email" />
-
           <input type="text" name="phone" placeholder="Telefone" />
-
-          <textarea name="message" cols="30" rows="10"></textarea>
-
+          <textarea
+            name="message"
+            placeholder="Descreva sua dúvida :)"
+            cols="30"
+            rows="10"
+          ></textarea>
           <button type="submit">Enviar</button>
         </form>
 
-        <span id="logo">HELLOTEK LUXURY CAR RENTALS</span>
+        <span class="logo">HELLOTEK LUXURY CAR RENTALS</span>
 
         <div class="social_media">
           <a href="#" target="_blank">
@@ -200,7 +218,6 @@
             ></i>
           </a>
         </div>
-
       </div>
     </footer>
 
