@@ -1,3 +1,23 @@
+const menu_items = document.getElementById("menu_items")
+const menu_button = document.getElementById("menu_button");
+const menu_icon = document.getElementById("menu_icon");
+const menu_nav = document.getElementById("menu_nav")
+
+function toggleDisplay() {
+  if(menu_items.style.display === "none") {
+    menu_items.style.display = "flex";
+    menu_button.style.marginRight = "1rem";
+    menu_icon.style.fontSize = "1rem";
+  } else {
+    menu_items.style.display = "none";
+    menu_button.style.marginRight = "0";
+    menu_icon.style.fontSize = "3rem";
+  }
+}
+
+menu_button.addEventListener("click", toggleDisplay)
+
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
