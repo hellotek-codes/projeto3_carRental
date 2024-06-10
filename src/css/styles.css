@@ -99,7 +99,7 @@ body {
 
           @media (max-width: 630px) {
             justify-content: center;
-            height:10rem;
+            height: 10rem;
             margin: 1.2rem 0;
           }
 
@@ -114,9 +114,14 @@ body {
               flex-direction: column;
               justify-content: center;
               gap: 1rem;
-              display: flex;
               align-items: center;
-              display: none;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.5s ease-out;
+            }
+
+            &.open {
+              max-height: 20rem;
             }
           }
         }
@@ -130,7 +135,7 @@ body {
             display: none;
           }
 
-          .hamburguer_menu {
+          .hamburger_menu {
             color: #fff;
             font-size: 3rem;
           }

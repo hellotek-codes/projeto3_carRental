@@ -1,22 +1,33 @@
-const menu_items = document.getElementById("menu_items")
-const menu_button = document.getElementById("menu_button");
-const menu_icon = document.getElementById("menu_icon");
-const menu_nav = document.getElementById("menu_nav")
+const menuItems = document.getElementById("menu_items");
+const menuButton = document.getElementById("menu_button");
+const menuIcon = document.getElementById("menu_icon");
 
-function toggleDisplay() {
-  if(menu_items.style.display === "none") {
-    menu_items.style.display = "flex";
-    menu_button.style.marginRight = "1rem";
-    menu_icon.style.fontSize = "1rem";
+function handleResize() {
+  if (window.innerWidth > 630) {
+    menuItems.style.display = "flex";
   } else {
-    menu_items.style.display = "none";
-    menu_button.style.marginRight = "0";
-    menu_icon.style.fontSize = "3rem";
+    menuItems.style.display = "none";
+    menuIcon.style.fontSize = "3rem";
   }
 }
 
-menu_button.addEventListener("click", toggleDisplay)
+function toggleDisplay() {
+  if (menuItems.style.display === "none" || menuItems.style.display === "") {
+    menuItems.style.display = "flex";
+    setTimeout(() => menuItems.classList.add('open'), 15); 
+    menuButton.style.marginRight = "1rem";
+    menuIcon.style.fontSize = "1rem";
+  } else {
+    menuItems.classList.remove('open');
+    setTimeout(() => menuItems.style.display = "none", 500); 
+    menuButton.style.marginRight = "0";
+    menuIcon.style.fontSize = "3rem";
+  }
+}
 
+menuButton.addEventListener("click", toggleDisplay);
+window.addEventListener("resize", handleResize);
+handleResize();
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -55,10 +66,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("slide_img");
-
-  let dots = document.getElementsByClassName("button");
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -66,10 +74,11 @@ function showSlides(n) {
   if (n < 1) {
     slideIndex = slides.length;
   }
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 }
+
+showSlides(slideIndex)
