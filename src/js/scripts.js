@@ -15,13 +15,15 @@ function toggleDisplay() {
   if (menuItems.style.display === "none" || menuItems.style.display === "") {
     menuItems.style.display = "flex";
     setTimeout(() => menuItems.classList.add('open'), 15); 
-    menuButton.style.marginRight = "1rem";
-    menuIcon.style.fontSize = "1rem";
+    menuIcon.style.fontSize = "1.3rem";
+    menuIcon.style.marginTop = "0";
+    menuButton.styles.marginTop = "0rem"
+
   } else {
     menuItems.classList.remove('open');
     setTimeout(() => menuItems.style.display = "none", 500); 
-    menuButton.style.marginRight = "0";
     menuIcon.style.fontSize = "3rem";
+    menuButton.style.marginTop = "2rem"
   }
 }
 
