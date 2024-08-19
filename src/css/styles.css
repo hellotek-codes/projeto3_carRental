@@ -71,7 +71,6 @@ body {
       @media (max-width: 767px) {
         height: 48rem;
         padding: 4.2rem 0 18.5rem 0;
-
       }
 
       .menu_container {
@@ -98,7 +97,7 @@ body {
           font-size: 1.2rem;
           color: #fff;
           font-family: "Lato", sans-serif;
-          
+
           @media (max-width: 630px) {
             justify-content: center;
             flex-direction: column-reverse;
